@@ -1,0 +1,237 @@
+<html>
+  <head>
+    <title>Innovation Website Tutorial</title>
+    <style>
+      body {
+        background-color: #EAEAEA;
+        color: white;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        padding: 20px;
+      }
+
+      .tutorial {
+        font-size: 16px;
+        padding: 35px;
+        color: #333;
+        background: #fbcc33;
+        box-shadow: 0 1px 4px rgba(0,0,0,.2);
+      }
+
+      h1 {
+        font-size: 2.2em;
+        font-weight: normal;
+        margin: 0 0 15px 0;
+        padding: 0 0 5px 0;
+        border-bottom: solid 2px #C9B45B;
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        font-weight: normal;
+        color: #fff;
+      }
+
+      h2 {
+        font-size: 2em;
+        margin: 35px 0 5px 0;
+      }
+
+      h3 {
+        font-size: 1.8em;
+        margin: 30px 0 5px 0;
+      }
+
+      h4 {
+        font-size: 1.5em;
+        margin: 25px 0 5px 0;
+      }
+
+      h5 {
+        font-size: 1.2em;
+        margin: 20px 0 5px 0;
+        font-weight: bold
+      }
+
+      h6 {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 20px 0 5px 0;
+      }
+
+
+      code {
+        background: rgba(0,0,0,.1);
+        font-family: monospace;
+        padding: 1px 3px;
+        margin: 0 1px;
+      }
+
+      /* Steps list */
+
+      ol.steps {
+        list-style-type: none;
+        counter-reset: step-counter;
+        padding-left: 60px;
+        margin: 30px 0 30px 0;
+      }
+
+      ol.steps > li {
+        position: relative;
+        margin: 0 0 35px 0;
+        min-height: 50px;
+      }
+
+      ol.steps > li h6 {
+        font-size: 1.5em;
+        font-weight: normal;
+        color: rgba(0,0,0,.6);
+      }
+
+      ol.steps > li p {
+        line-height: 140%;
+      }
+
+      ol.steps > li:before {
+        content: counter(step-counter);
+        counter-increment: step-counter;
+        position: absolute;
+        left: -60px;
+        font-size: 16px;
+        border: solid 2px rgba(0,0,0,.4);
+        border-radius: 50%;
+        padding: 10px 15px;
+        opacity: .5;
+        top: 2px;
+      }
+
+
+      a {
+        color: #357548;
+      }
+
+      a:hover {
+        color: #246036;
+      }
+
+      p, li {
+        color: rgba(0,0,0,.6);
+      }
+
+      p {
+        line-height: 125%;
+      }
+
+      .tip {
+        background: rgba(0,0,0,.1);
+        padding: 10px 14px;
+        border-radius: 2px;
+      }
+
+      hr {
+        border: none;
+        border-bottom: solid 2px #C9B45B;
+        margin: 25px 0;
+      }
+
+      p, ol, ul {
+        margin: 10px 0 20px 0;
+      }
+
+      li {
+        margin: 0 0 10px 0;
+      }
+
+      img {
+        display: block;
+        margin: 5px 0 10px;
+        border: solid 5px white;
+        box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+      }
+
+      .code {
+        background: #222;
+        padding: 10px 12px;
+        display: block;
+        font-size: 14px;
+        color: rgba(255,255,255,.8);
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tutorial">
+
+      <h1>Innovation Website Tutorial</h1>
+      <p>
+      <p>Hello and welcome!</p>
+
+      <p>In this activity, you'll remix a website about an innovator or invention of your choice. Change the video, add in an image, teach some fun facts, and style the site however you want.</p>
+
+      <ol class="steps">
+        <!-- Step 1-->
+        <li>
+          <h6>Change the title of the site</h6>
+          <p>The <code>&lt;title&gt;</code> on <code>line 6</code> tells us the name of the website. If someone bookmarks/saves our site in their browser, it'll be saved with this name.</p>
+        </li>
+        
+        <!-- Step 2-->
+        <li>
+          <h6>Change the heading</h6>
+          <p>The title that we see on the page is called a heading. Any text that goes in between the <code>&lt;h1&gt;</code> tags on <code>line 10</code> will become the heading.</p>
+        </li> 
+        
+        <!-- Step 3-->
+        <li>
+          <h6>Add some information</h6>
+          <p>Update the paragraph on <code>line 15</code>. Add more paragraphs if you'd like!</p>
+        </li> 
+
+        <!-- Step 4-->
+        <li>
+          <h6>Embed a video</h6> 
+
+          <p> First, we need to find a video. Head to <a href="http://www.youtube.com">YouTube</a> search for videos that relate to your province, territory, town, or area.</p>
+
+          <p>Once you've found the video you want to embed in your site. Click the share button (it looks like a little arrow with share beside it) and choose embed. Copy the embed code. </p>
+
+          <p>Delete the other <code>iframe</code> code on <code>line 11</code> to get rid of the example video. Paste the code you just copied into <code>line 11</code>.</p>
+
+          <!-- Step 5-->
+        <li>
+          <h6>Add an image</h6>
+          <p>Find an image relating to your topic by searching <a href="https://images.google.ca/?gws_rd=ssl">Google Images</a>. Try to find a creative commons image by selecting Tools &gt; Usage rights &gt; Labeled for reuse. </p>
+          
+          <p>After saving the image to your computer, upload it into your Thimble project. Click on the green page icon in the Files menu &gt; Upload a file. </p>
+          
+          <p>Go back to your <code>index.html</code> file and create a new image tag using <code>&lt;img src="imagename.png"/&gt;</code>.</p>
+        </li> 
+
+        <!--  Step 6 -->
+        <li>
+          <h6>Change the styles</h6>
+          <p>The CSS file is where the styles for the website are kept. Open <code>style.css</code> and try changing the font or background colour. Find some sample styles at <a href="http://css.cool/#/">CSS.cool</a></p>
+          
+          <p>What other styles would you like to change? How about adding borders? If you're unsure of how to change the look of the site work with another student to research the style you might want to change.</p> 
+        </li>
+        
+        <!--  Step 7 -->
+        <li>
+          <h6>Cite your sources</h6>
+          <p>Don't forget to add links to any articles or images used under Works Cited.</p> 
+        </li>
+        
+        <!--  Step 8 -->
+        <li>
+          <h6>Share your website</h6>
+          <p>When you're ready to share your tourism site, rename the project name (top left) and click 'Publish' (top right).</p>
+
+          <p>Once you've published your page, copy the URL and send it to your teacher or ask your teacher to write it down for you.</p> 
+        </li>
+      </ol>
+
+      <p>
+        Great job! See what else you can edit/change to your page by researching other cool webpages. How about a link?  
+      </p>
+    </div>
+    </body>
+  </html>
